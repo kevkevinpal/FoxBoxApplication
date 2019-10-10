@@ -154,8 +154,6 @@ const styles = StyleSheet.create({
         marginRight: 'auto',
         width: 100,
         height: 100,
-        backgroundColor: 'transparent',
-        color: 'white'
     },
     //Text in first wire frame
     text: {
