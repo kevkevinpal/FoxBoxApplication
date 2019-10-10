@@ -1,6 +1,22 @@
 # Summary
 <p>This is the project given by foxbox which wanted a simple cocktail search which a user can click on the search then after typing their desired drink will return a response of blocks that are similar to the term they searched<p>
 	
+
+# How to Install
+We first want to download the repositiory
+
+`git clone https://github.com/kevkevinpal/FoxBoxApplication.git`
+
+Then we want to install all the node modules we need for this application so we do
+
+`npm install`
+
+then after we want to open up our android emulator and run the application by doing
+
+`react-native run-android`
+
+At this point the application should be running on the emulator
+
 # Files
  - App.js
 	- In this file we set up our global variables since redux is not implemented yet.
