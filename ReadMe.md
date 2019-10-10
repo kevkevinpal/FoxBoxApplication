@@ -17,6 +17,10 @@ then after we want to open up our android emulator and run the application by do
 
 At this point the application should be running on the emulator
 
+# How it Looks
+![Home Page](./assets/images/Readme1.png)
+![Search Page](./assets/images/Readme2.png)
+
 # Files
  - App.js
 	- In this file we set up our global variables since redux is not implemented yet.
