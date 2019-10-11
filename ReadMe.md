@@ -29,19 +29,20 @@ At this point the application should be running on the emulator
 		
 	- It passes these props and functions into the wireframe component
 		
-	- there are 3 functions in this component
-			<p>callApi(): this calls the api if the text length is > 2 and also sets the state of the data, loading state, and the value in the text box<p>
+	- this works kind of like a redux store as the global state for our components
 
- - WireFrame.js
-	- This file contains the wire frames of the project because I did not feel splitting the two wireframes into components would make it any easier to read, they are both conditional rendered
+	- This call either WireFrame1 or WireFrame2
+
+ - WireFrame1.js
+	- This is just the splash screen
 		 
-	-  there are 5 functions in this Component
+	
+- WireFrame2.js 
+	-  there are 3 functions/functional Compoents in this Component
 			renderBlocks(): this renders the DrinkBlock Components
-			renderClearButton(): this renders the clear button
+			renderClearButton(): this renders the clear button from a functional component
 			renderLoadingOrBlocks(): this either renders the loading image or the blocks we wanted
-			renderView(): we pick which wire frame to render in here and then render that frame
-			render(): this just calls renderView
-			
+
  - DrinkBlock.js
 		- This file only returns the View which is pretty simple just a block with an image and text field
 
