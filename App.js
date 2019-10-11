@@ -8,7 +8,8 @@
 
 import React from 'react';
 import {Component} from 'react'
-import WireFrame from './Components/WireFrame'
+import WireFrame1 from './Components/WireFrame1/WireFrame1.js'
+import WireFrame2 from './Components/WireFrame2/WireFrame2.js'
 import { BackHandler } from 'react-native'
 //I like this module
 //I use it at work for api calls
@@ -142,9 +143,17 @@ handleBackButtonClick() {
    * multiple things from the state and some functions
    ******************************/
   render(){
-    return (
-      <WireFrame loading={this.state.loading} data={this.state.data} callApi={this.callApi} value={this.state.value} lookAtMe={this.lookAtMe} isWireFrame2={this.state.isWireFrame2} />
-    );
+    //If on the 1st wireframe do the 1st if block
+    if(!(this.state.isWireFrame2)){
+      return (
+          <WireFrame1 lookAtMe={this.lookAtMe} callApi={this.callApi} value={this.state.value} />
+      )
+    //else if on 2nd wireframe do 2nd if block
+    }else{
+        return (
+            <WireFrame2 data={this.state.data} callApi={this.callApi} value={this.state.value} loading={this.state.loading} />
+        )
+    }
   }
   
 }
